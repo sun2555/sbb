@@ -7,15 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
     @GetMapping("/hello")
-//    @ResponseBody
+    @ResponseBody
     public String hello() {
-        return "Hello";
+return"hello world.";
     }
-    
-    @GetMapping("/event")
-    public String event() {
-    	String filename = "myevent";
-        return "myevent";
-    }
-    
+  
 }
